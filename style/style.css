@@ -83,8 +83,9 @@ header{
 
 /* sponsor section start */
 .sponsor{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    
 }
 /* sponsor section end */
 
@@ -191,5 +192,18 @@ footer{
         width: 400px;
     }
 
+    .sponsor-container{
+        max-width: 400px;
+    }
+    .sponsor{
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-content: center;
+        
+    }
+
+    .sponsor img{
+        max-width: 55px;
+    }
 
 }
