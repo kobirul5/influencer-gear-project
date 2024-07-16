@@ -7,8 +7,29 @@
 }
 
 /* shared style */
+
+main section{
+    margin: 130px auto 0px auto;
+    width: 1300px;
+}
+
 .dark-1{
-    
+    color:rgb(24, 25, 31);
+}
+.dark-2{
+    color: rgb(58, 58, 58);
+}
+.dark-3{
+    color: rgb(120, 120, 133);
+}
+
+.btn-primary{
+    border: none;
+    background-color: rgb(224, 44, 109);
+    font-size: 16px;
+    font-weight: 700;
+    padding:10px 24px;
+    color: rgb(255, 255, 255);
 }
 
 /* nav section start */
@@ -24,7 +45,7 @@ header{
 .nav-title{
     color: rgb(58, 58, 58);
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 .nav-content ul{
@@ -35,10 +56,11 @@ header{
 .nav-content ul li a{
     text-decoration: none;
     color: rgb(58, 58, 58);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 /* nav section end */
+
 /* start influencer section */
 .influencer-container{
     display: flex;
@@ -51,4 +73,123 @@ header{
 }
 .influencer-title h1{
     font-size: 3.25rem;
+} 
+.influencer-content{
+    margin-right: 40px;
+}
+.influencer-title button{
+    border-radius: 20px;
+}
+
+/* sponsor section start */
+.sponsor{
+    display: flex;
+    justify-content: space-around;
+}
+/* sponsor section end */
+
+/* popular section star */
+
+.popular-container{
+    width: 1047px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center; 
+    align-content: center;
+    gap: 20px;
+}
+
+/* popular section end */
+
+/* feature section */
+.feature-container{
+    width: 1047px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature-title h1{
+    font-size: 2.05rem;
+} 
+.feature-title p{
+    width: 501px;
+    font-size: 1rem;
+} 
+.feature-content{
+    margin-right: 40px;
+}
+
+/* footer */
+footer{
+    margin: 0 auto;
+    background-color: rgb(10, 8, 38);
+    margin-top: 130px;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    
+    
+}
+ 
+.footer-container h3{
+    font-size: 24px;
+    color: white;
+    line-height: 0.8;
+    margin: 0px;
+    padding: 0%;
+}
+.footer-container h4{
+    font-size: 14px;
+    color: white;
+    margin: 10px;
+}
+
+
+/* responsive for mobile device */
+@media screen and (max-width:576px){
+    .hide{
+        display: none;
+    }
+    .feature-container,
+    .influencer-container,
+    .nav-container{
+        flex-direction: column-reverse; 
+        justify-content: center;
+        align-items: center;
+    }
+    .influencer-title{ 
+        width: 100%;
+        text-align: center;
+    }
+    .influencer-title h1{ 
+        font-size: 1.75rem;
+    }
+    .popular-container{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .popular-content h3, h4, p{
+        width: 200px;
+    }
+    .feature-container{
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        gap: 20px;
+    }
+    .feature-container h1{
+        font-size: 1.8rem; 
+    }
+    .feature-container p{
+        width: 400px;
+    }
+
+
 }
