@@ -5,7 +5,9 @@
     font-weight: 400;
     font-style: normal;
 }
-
+*{
+    margin: 0;
+}
 /* shared style */
 
 main section{
@@ -196,7 +198,7 @@ footer{
         max-width: 400px;
     }
     .sponsor{
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 4fr 3fr;
         justify-items: center;
         align-content: center;
         
