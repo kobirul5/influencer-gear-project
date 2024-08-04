@@ -209,3 +209,26 @@ footer{
     }
 
 }
+
+@media screen and (min-width:576px) and (max-width:992px){
+    .sponsor-container{
+        display: none;
+    }
+    .popular-container{
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+    }
+    .popular-content p{
+        width: 70%;
+    }
+    .feature-container{
+        width: 95%;
+    }
+    .feature-title{
+        width: 90%;
+    }
+    .feature-content img{
+        width: 100%;
+    }
+
+}
