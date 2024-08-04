@@ -32,12 +32,14 @@ main section{
     font-weight: 700;
     padding:10px 24px;
     color: rgb(255, 255, 255);
+    margin: 1rem 0;
 }
 
 /* nav section start */
 header{
    margin: 0 auto;
    max-width: 1300px;
+   margin-top: 2rem;
 }
 .nav-container{
     display: flex;
@@ -81,6 +83,7 @@ header{
 }
 .influencer-title button{
     border-radius: 20px;
+    margin-top: 1rem;
 }
 
 /* sponsor section start */
@@ -211,6 +214,12 @@ footer{
 }
 
 @media screen and (min-width:576px) and (max-width:992px){
+    header{
+        width: 95%;
+    }
+    .influencer-title h1{
+        font-size: 2.5rem;
+    }
     .sponsor-container{
         display: none;
     }
@@ -223,12 +232,10 @@ footer{
     }
     .feature-container{
         width: 95%;
+        flex-direction: column;
     }
     .feature-title{
-        width: 90%;
-    }
-    .feature-content img{
-        width: 100%;
+        margin-top: 2rem;
     }
 
 }
