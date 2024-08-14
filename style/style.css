@@ -7,6 +7,7 @@
 }
 *{
     margin: 0;
+    padding: 0;
 }
 /* shared style */
 
@@ -67,6 +68,8 @@ header{
 
 /* start influencer section */
 .influencer-container{
+    margin: 0 auto;
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -87,11 +90,17 @@ header{
 }
 
 /* sponsor section start */
-.sponsor{
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    
+.sponsor-container{
+    margin: 0 auto;
+    width: 90%;
 }
+.sponsor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    gap:2rem;
+    
+} 
 /* sponsor section end */
 
 /* popular section star */
@@ -177,12 +186,21 @@ footer{
     .influencer-title h1{ 
         font-size: 1.75rem;
     }
-    .popular-container{
+    .influencer-title {
         width: 100%;
+    }
+    .influencer-content img{
+        width: 100%;
+    }
+    .popular-container{
+        width: 90%;
         grid-template-columns: repeat(1, 1fr);
     }
-    .popular-content h3, h4, p{
-        width: 200px;
+    .popular-content h3,
+    .popular-content p{
+        margin: 1rem 0;
+        padding: 0;
+        width: 300px;
     }
     .feature-container{
         width: 400px;
@@ -201,9 +219,9 @@ footer{
         max-width: 400px;
     }
     .sponsor{
-        grid-template-rows: 4fr 3fr;
+        grid-template-columns: repeat(4, 3fr);
         justify-items: center;
-        align-content: center;
+        align-items: center;
         
     }
 
@@ -217,11 +235,16 @@ footer{
     header{
         width: 95%;
     }
+    .nav-container{
+        margin: 3rem auto;
+        gap: 0;
+        width: 90%;
+    }
     .influencer-title h1{
         font-size: 2.5rem;
     }
     .sponsor-container{
-        display: none;
+        
     }
     .popular-container{
         grid-template-columns: repeat(2, 1fr);
